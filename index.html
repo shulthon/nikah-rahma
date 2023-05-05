@@ -305,13 +305,13 @@
 	<script src="js/leaflet/leaflet.js"></script>
 	<script>
 	    if (document.getElementById("maps-view-absen")) {
-	        var map = L.map('maps-view-absen').setView([-6.25330,106.99668], 13);
+	        var map = L.map('maps-view-absen').setView([-6.25330, 106.99925], 15);
 
 	        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">Shulthon OpenStreetMap</a>'
+	            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	        }).addTo(map);
 
-	        L.marker([-6.25330,106.99668]).addTo(map);
+	        L.marker([-6.25330, 106.99925]).addTo(map);
 	    }
 	</script>
 	<script>
