@@ -308,31 +308,31 @@
 	        var map = L.map('maps-view-absen').setView([-6.25330,106.99668], 13);
 
 	        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">Shulthon OpenStreetMap</a>'
 	        }).addTo(map);
 
 	        L.marker([-6.25330,106.99668]).addTo(map);
 	    }
 	</script>
 	<script>
-    // var d = new Date(new Date().getTime() + 200 * 120 * 120 * 700);
-    var d = new Date("2023-07-01T07:00:00.000+07:00");
+		// var d = new Date(new Date().getTime() + 200 * 120 * 120 * 700);
+		var d = new Date("2023-05-06T07:00:00.000+07:00");
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
 
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+	</script>
 
 	</body>
 </html>
