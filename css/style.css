@@ -12,6 +12,8 @@
 * ======================================================= */
 body {
   font-family: "Work Sans", Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -94,9 +96,9 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 1001;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-nav {
+  /* .fh5co-nav {
     padding: 20px 0;
-  }
+  } */
 }
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
@@ -1640,7 +1642,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
-    display: block;
+    display: none;
   }
 }
 
