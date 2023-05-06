@@ -824,6 +824,19 @@ form label {
   font-weight: normal !important;
 }
 
+#fh5co-isi .display-tc {
+
+  display: table-cell !important;
+  overflow: hidden;
+  color: black;
+  vertical-align: middle;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+
+
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {
@@ -849,6 +862,25 @@ form label {
   padding-top: calc(33cqw);
   padding-bottom: calc(33cqw);
 }
+
+#fh5co-isi .display-tc {
+
+  display: table-cell !important;
+  color: black;
+  vertical-align: middle;
+  padding-top: calc(33cqw);
+  padding-bottom: calc(33cqw);
+}
+}
+
+.containerisi {
+  border-radius: 25px;
+  color: white;
+  background: #8e6045;
+  padding: 20px;
+}
+.containerisi h2, .containerisi h3  {
+  color: white !important;
 }
 
 
@@ -1218,8 +1250,8 @@ form label {
 }
 
 .desc-bride h3, .desc-groom h3{
-  font-size: 35px !important;
-  font-family: 'Great Vibes';
+  font-size: 30px !important;
+  font-family: 'Nature Beauty Personal Use';
 }
 
 h2.salam {
@@ -1228,7 +1260,7 @@ h2.salam {
 
 @media screen and (max-width: 768px) {
   .desc-bride h3, .desc-groom h3{
-    font-size: 27px !important;
+    font-size: 20px !important;
   }
   h2.salam {
     font-size: 22px !important;
