@@ -9,7 +9,7 @@
 	<title>Shulthon dan Rahma</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Walimatul 'Urs Shulthon & Rahma" />
-	<meta name="author" content="Shulthon Hanif Majid" />
+	<meta name="author" content="Djazuli IT" />
 
 
 	<meta property="og:title" content="Pernikahan Shulthon & Rahma"/>
@@ -49,8 +49,57 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script>
+	    (function () {
+	  const second = 1000,
+		minute = second * 60,
+		hour = minute * 60,
+		day = hour * 24;
+
+	  //I'm adding this section so I don't have to keep updating this pen every year :-)
+	  //remove this if you don't need it
+	  let today = new Date(),
+	      dd = String(today.getDate()).padStart(2, "0"),
+	      mm = String(today.getMonth() + 1).padStart(2, "0"),
+	      yyyy = today.getFullYear(),
+	      nextYear = yyyy + 1,
+	      dayMonth = "07/01/",
+	      birthday = dayMonth + yyyy;
+
+	  today = mm + "/" + dd + "/" + yyyy;
+	  if (today > birthday) {
+	    birthday = dayMonth + nextYear;
+	  }
+
+	  targetday = "2023-07-01T07:30:00+07:00"
+	  //end
+
+	  const countDown = new Date(targetday).getTime(),
+	      x = setInterval(function() {    
+
+		const now = new Date().getTime(),
+		      distance = countDown - now;
+
+		document.getElementById("days").innerText = Math.floor(distance / (day)),
+		  document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+		  document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+		  document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+		//do something later when date is reached
+		if (distance < 0) {
+		  document.getElementById("headline").innerText = "Walimatul 'Urs!";
+		  document.getElementById("countdown").style.display = "none";
+		  document.getElementById("content").style.display = "block";
+		  clearInterval(x);
+		}
+		//seconds
+	      }, 0)
+	  }());
+	</script>
+		
 	</head>
 	<body>
+
 		
 	<div class="fh5co-loader"></div>
 	<style type="text/css">
@@ -58,7 +107,97 @@
 			position: fixed;
 		}
 	</style>
+	
+	        <style>
+            
+
+
+
+/* general styling */
+/* :root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: #843c0c;	
+  height: 100%;
+  margin: 0;
+}
+ */
+/* body {
+   align-items: center;
+  background-color: #ffffff;
+  display: flex; 
+
+} */
+
+/* .container {
+  color: #843c0c;
+  margin: 0 auto;
+  text-align: center;
+}
+ */
+			
+#countdown {
+	background-color: aqua;
+  color: #843c0c;
+  margin: 0 auto;
+  text-align: center;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+			
+#countdown h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+#countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+
+
+@media all and (max-width: 768px) {
+  #countdown h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  #countdown li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  #countdown li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+        </style>
+	
 	<div id="page">
+
 	<!-- <nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -78,18 +217,26 @@
 		</div>
 	</nav> -->
 
-	<header id="fh5co-header">
 
+
+	<header id="fh5co-header">
 		<div class="container" id="beranda">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Walimatul 'Urs</h1>
-							<img src="images/couple.png" style="max-width: 400px; display: block; margin-left: auto; margin-right: auto;" alt="walimatul" class="img-responsive">
+							<img src="images/couple.png" style="width: 100%; display: block; margin-left: auto; margin-right: auto;" alt="walimatul" class="img-responsive">
 							<h2>Shulthon &amp; Rahma</h2>
 							<h3>01 | 07 | 2023</h3>
-							<div class="simply-countdown simply-countdown-one"></div>
+							<div id="countdown">
+							    <ul>
+							      <li><span id="days"></span>Hari</li>
+							      <li><span id="hours"></span>Jam</li>
+							      <li><span id="minutes"></span>Menit</li>
+							      <li><span id="seconds"></span>Detik</li>
+							    </ul>
+							  </div>
 							<!-- <p><a href="#" class="btn btn-default btn-sm">Mohon Doa Restu</a></p> -->
 						</div>
 					</div>
@@ -131,7 +278,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_9.jpg);">
+	<div id="fh5co-event">
 		<div class="overlay"></div>
 		<div class="container" id="acara">
 			<div class="row">
@@ -236,7 +383,7 @@
 										<figure>
 											<img src="images/nikah.png" alt="user">
 										</figure>
-										<span>Rasulullah SAW bersabda:</span>
+										<span>Rasulullah bersabda:</span>
 										<blockquote>
 											<p>“Siapa yang ingin bertemu Allah dalam keadaan suci dan disucikan, maka menikahlah dengan perempuan-perempuan merdeka.” (HR Ibnu Majah)</p>
 										</blockquote>
@@ -274,9 +421,9 @@
 		</div>
 	</footer>
 	</div>
-	<audio autoplay="true" loop="true" controls>
+<!-- 	<audio autoplay="true" loop="true" controls>
 		<source src="audio.mp3" type="audio/mpeg">
-	</audio>
+	</audio> -->
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>

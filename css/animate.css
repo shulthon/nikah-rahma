@@ -284,6 +284,22 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+@keyframes goyang1 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg);scale: 1.1; }
+  /* 50% { transform: rotate(0eg);scale: 1;} */
+  /* 75% { transform: rotate(-5deg);scale: 1.1; } */
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes goyang2 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-5deg);scale: 1.1;}
+  /* 50% { transform: rotate(0eg);scale: 1;} */
+  /* 75% { transform: rotate(-5deg);scale: 1.1; } */
+  100% { transform: rotate(0deg); }
+}
+
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;

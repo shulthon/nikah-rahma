@@ -22,6 +22,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+	<link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/diamond.png">
@@ -100,12 +101,12 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<!-- <div class="fh5co-loader"></div>
 	<style type="text/css">
 		nav{
 			position: fixed;
 		}
-	</style>
+	</style> -->
 	
 	        <style>
             
@@ -130,21 +131,16 @@ html, body {
 }
  */
 /* body {
-/*   align-items: center;
+   align-items: center;
   background-color: #ffffff;
-  display: flex; */
+  display: flex; 
 
 } */
 
-/* .container {
-  color: #843c0c;
-  margin: 0 auto;
-  text-align: center;
-}
- */
+
 			
 #countdown {
-  color: #843c0c;
+  color: white;
   margin: 0 auto;
   text-align: center;
   font-family: -apple-system, 
@@ -164,17 +160,24 @@ html, body {
   text-transform: uppercase;
 }
 
+#countdown ul {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
 #countdown li {
+	background-color: #8e6045;
+	width: 70px;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1em;
   list-style-type: none;
   padding: 1em;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 #countdown li span {
   display: block;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
 }
 
 
@@ -185,16 +188,18 @@ html, body {
   }
   
   #countdown li {
-    font-size: calc(1.125rem * var(--smaller));
+	text-align: center;
+    font-size: calc(1rem * var(--smaller));
   }
   
   #countdown li span {
-    font-size: calc(3.375rem * var(--smaller));
+    font-size: calc(2.375rem * var(--smaller));
   }
 }
         </style>
 	
 	<div id="page">
+
 	<!-- <nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -216,13 +221,17 @@ html, body {
 
 	<header id="fh5co-header">
 		<div class="container" id="beranda">
+
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<img src="images/kiriatas.png" class="animtop"/>
+							<img src="images/kananbawah.png" class="animbottom"/>
 							<h1>Walimatul 'Urs</h1>
-							<img src="images/couple.png" style="width: 100%; display: block; margin-left: auto; margin-right: auto;" alt="walimatul" class="img-responsive">
-							<h2>Shulthon &amp; Rahma</h2>
+							<img src="images/couple.png" style="width: 70%; display: block; margin-left: auto; margin-right: auto;" alt="walimatul" class="img-responsive">
+							<br/>
+							<h2>Rahma &amp; Shulthon</h2>
 							<h3>01 | 07 | 2023</h3>
 							<div id="countdown">
 							    <ul>
@@ -231,7 +240,7 @@ html, body {
 							      <li><span id="minutes"></span>Menit</li>
 							      <li><span id="seconds"></span>Detik</li>
 							    </ul>
-							  </div>
+							</div>
 							<!-- <p><a href="#" class="btn btn-default btn-sm">Mohon Doa Restu</a></p> -->
 						</div>
 					</div>
@@ -240,7 +249,48 @@ html, body {
 		</div>
 	</header>
 
-	<div id="fh5co-couple">
+	<div id="fh5co-header">
+		<div class="container" id="pasangan">
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<img src="images/kiriatas.png" class="animtop"/>
+							<img src="images/kananbawah.png" class="animbottom"/>
+							<h2>Assalamu’alaykum Warahmatullahi Wabarakatuh</h2>
+							<p>
+								Dengan Memohon Rahmat Dan Ridho Allah Subḥānahu Wa Taʿālā, Yang Telah Menciptakan Makhluk-Nya Secara Berpasang-Pasangan, Kami Bermaksud Menyelenggarakan Pernikahan Kami.
+							</p>
+
+							<div class="desc-bride">
+								<h3 class="great">Rahma Rosaliana Saraswati, S.Pd</h3>
+								<p>Putri pertama dari Bapak Iswanto & Ibu Lina Marlina
+									<br/>
+									(Jl. P. Flores  4  No. 25, RT 001 / RW 010, Perumnas 3, Kel. Aren Jaya, Kec. Bekasi Timur)
+								</p>
+							</div>
+
+							<h2>&</h2>
+
+							<div class="desc-groom">
+								<h3 class="great">Shulthon Hanif Majid, S.Pd</h3>
+								<p>
+									Putra pertama dari Bapak Agus Purwanto & Ibu Waliyah
+									<br/>
+									(Jl. Swadaya 5 No. 8 RT 016 / 04, Kel. Cempaka Baru, Kec. Kemayoran)
+
+								</p>
+							</div>
+							<!-- <p><a href="#" class="btn btn-default btn-sm">Mohon Doa Restu</a></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="fh5co-couple">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -271,7 +321,7 @@ html, body {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div id="fh5co-event">
 		<div class="overlay"></div>
@@ -329,11 +379,17 @@ html, body {
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Denah Resepsi</h2>
+					<h2>Lokasi Acara</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div id='maps-view-absen' style='width: 100%; height:500px;'></div>
+				<iframe frameborder="0" style="width: 100%; height:500px;" scrolling="no" marginheight="0" marginwidth="0"
+				src="https://maps.google.com/maps?q=Gedung%20Serbaguna%20Komplek%20PP.%20PUPR%20Pengairan%20Bekasi&#038;t=m&#038;z=16&#038;output=embed&#038;iwloc=near"
+				title="Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi"
+				aria-label="Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi"
+		>
+	</iframe>
+				<!-- <div id='maps-view-absen' style='width: 100%; height:500px;'></div> -->
 			</div>
 		</div>
 	</div>
@@ -408,7 +464,7 @@ html, body {
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2022 <a href="djazuli.my.id">Djazuli Design</a>.</small> 
+						<small class="block">&copy; 2023 <a href="http://shulthon.blogspot.com">Shulthon Hanif Majid</a>.</small> 
 					</p>
 				</div>
 			</div>
