@@ -1333,7 +1333,7 @@ form label {
 
 .desc-bride h3, .desc-groom h3{
   font-size: 30px !important;
-  line-height: 2;
+  line-height: 2 !important;
   font-family: 'Nature Beauty Personal Use';
 }
 
