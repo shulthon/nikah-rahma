@@ -934,6 +934,8 @@ form label {
   color: white !important;
 }
 
+
+
 .containerisi h2 {
   font-size: 20px;
   padding-top: 20px;
@@ -1333,7 +1335,7 @@ form label {
 
 .desc-bride h3, .desc-groom h3{
   font-size: 30px !important;
-  line-height: 2 !important;
+  line-height: 1.5 !important;
   font-family: 'Nature Beauty Personal Use';
 }
 
@@ -1350,20 +1352,6 @@ span.salam {
   }
 }
 
-
-
-
-
-h3.great {
-  font-family: 'Great Vibes';
-}
-
-
-
-h2.great {
-  font-family: 'Great Vibes';
-  font-size: 50px !important;
-}
 
 .feature-center {
   text-align: center;
