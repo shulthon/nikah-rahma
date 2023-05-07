@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Nature Beauty Personal Use", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -897,9 +897,10 @@ form label {
 
 .containerisi .containerisi2 h3{
   color: #6b473a !important;
-  font-family: 'Sacramento'; 
-  font-size: 40px; 
-  font-weight: bold;
+  font-family: "Nature Beauty Personal Use"; 
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .containerisi {
@@ -909,8 +910,57 @@ form label {
   background: #6b473a;
   padding: 20px;
 }
+
+.containerisi .btn {
+  padding: 10px 15px;
+  border-radius: 15px;
+  background: #fff !important;
+  color: #6b473a;
+  border: none !important;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.containerisi .btn:hover {
+  background: #fff !important;
+  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+}
+
 .containerisi h2, .containerisi h3  {
+  font-family: "Nature Beauty Personal Use"; 
   color: white !important;
+}
+
+.containerisi h2 {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .containerisi .containerisi2 h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .containerisi h2 {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .containerisi .containerisi2 h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .containerisi h2 {
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 
@@ -927,29 +977,29 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 0px;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Nature Beauty Personal Use",Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-family: 'Great Vibes';
-  font-size: 50px;
+  font-family: "Nature Beauty Personal Use", Arial, serif;
+  font-size: 40px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -958,7 +1008,7 @@ form label {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -966,7 +1016,7 @@ form label {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -1216,7 +1266,7 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Nature Beauty Personal Use", Arial, serif;
   color: #6b473a;
   font-size: 30px;
 }
@@ -1284,16 +1334,16 @@ form label {
   font-family: 'Nature Beauty Personal Use';
 }
 
-h2.salam {
-  font-size: 30px !important;
+span.salam {
+  font-size: 25px !important;
 }
 
 @media screen and (max-width: 768px) {
   .desc-bride h3, .desc-groom h3{
     font-size: 20px !important;
   }
-  h2.salam {
-    font-size: 22px !important;
+  span.salam {
+    font-size: 20px !important;
   }
 }
 
@@ -1366,7 +1416,7 @@ h2.great {
   line-height: 1.5;
   font-weight: bold;
   color: #6b473a;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Nature Beauty Personal Use", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
