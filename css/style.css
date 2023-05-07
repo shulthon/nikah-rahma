@@ -21,9 +21,9 @@ body {
   background: #fff;
 }
 
+
 #page {
   position: relative;
-  overflow-x: hidden;
   margin: 0 auto;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -887,6 +887,7 @@ form label {
   padding-bottom: calc(30cqw);
 }
 }
+
 
 .containerisi2 {
   border-radius: 15px;
