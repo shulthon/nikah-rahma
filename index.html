@@ -98,6 +98,7 @@
 		//seconds
 	      }, 0)
 	  }());
+
 	</script>
 		
 	</head>
@@ -197,19 +198,79 @@ html, body {
   #countdown li span {
     font-size: calc(2.375rem * var(--smaller));
   }
+
+
 }
-        </style>
+
+
+        
+#pembuka {
+	height: 100%;
+	width: 100%;
 	
+	background: white;
+	z-index: 1;
+  position: fixed;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  }
+
+  .wrappembuka {
+	position: fixed;
+	top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+	margin: 0 auto;
+	width: auto;
+  }
+  
+
+  #page {
+	display: none;
+  }
+
+  .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+	</style>
+
+	<script>
+
+function showhide() {
+  var x = document.getElementById("pembuka");
+    x.style.display = "none";
+	document.getElementById("page").style.display = "block";
+}
+	</script>
+
+    <div id="pembuka">
+		<div class="wrappembuka">
+			<img src="images/couple.png" style=" padding:20px;width: 300px; display: block; margin: 0 auto;" alt="walimatul" class="img-responsive">
+			<h2 style="color:#6b473a;text-align: center; font-size: 20px; font-family: 'Nature Beauty Personal Use'; line-height: 1.5;">Rahma &amp; Shulthon</h2>
+			<div class="text-center">
+				<span style="text-align: center !important; margin: 0 auto;">Kepada Bapak/ lbu/Saudara/i</span>
+				<script>	
+					const params = new Proxy(new URLSearchParams(window.location.search), {
+					get: (searchParams, prop) => searchParams.get(prop),
+					});
+					// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+					let value = params.to; // "some_value"
+					document.write("<p style=\"font-size:25px;\">"+value+"</p>")
+				</script>
+				<button onclick="showhide()" class="btn">Buka Undangan</button>
+
+			</div>
+		</div>
+	</div>
 	<div id="page">
 
-		<script>
-			const params = new Proxy(new URLSearchParams(window.location.search), {
-	  get: (searchParams, prop) => searchParams.get(prop),
-	});
-	// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
-	let value = params.to; // "some_value"
-			document.write("<p style=\"font-size:100px;\">"+value+"</p>")
-		</script>
+
 		
 
 	<!-- <nav class="fh5co-nav" role="navigation">
