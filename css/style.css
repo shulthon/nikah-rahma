@@ -19,6 +19,7 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  overflow: initial;
 }
 
 
@@ -1332,6 +1333,7 @@ form label {
 
 .desc-bride h3, .desc-groom h3{
   font-size: 30px !important;
+  line-height: 2;
   font-family: 'Nature Beauty Personal Use';
 }
 
