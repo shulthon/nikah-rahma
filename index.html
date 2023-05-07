@@ -261,7 +261,12 @@ function showhide() {
 					});
 					// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
 					let value = params.to; // "some_value"
-					document.write("<p style=\"font-size:25px;\">"+value+"</p>")
+
+					if (value) {
+						document.write("<p style=\"font-size:25px;color:#6b473a\">"+value+"</p>")
+					} else {
+						document.write("<br/><br/>")
+					}
 				</script>
 				<button onclick="showhide()" class="btn">Buka Undangan</button>
 
