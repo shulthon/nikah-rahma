@@ -1,0 +1,181 @@
+
+<html>
+    <header>
+        <title>Undang Generator</title>
+        <style>
+            
+
+
+
+/* general styling */
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #828282;
+  background: #fff;
+
+  align-items: center;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+
+
+
+#page {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 500px;
+  background-color: #46b8da;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+
+#fh5co-header .display-tc,
+#fh5co-counter .display-tc,
+.fh5co-cover .display-tc {
+  display: table-cell !important;
+  vertical-align: middle;
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+        </style>
+    </header>
+    <body>
+
+      <div id="page">
+        <div class="container">
+          <form action="" id="undangForm">
+            <h1>Generate Link</h1>
+            <input type="text" id="nama" class="form-control" placeholder="Masukkan nama yang diundang..">
+            <button type="submit">Generate</button>
+          </form>
+          <div id="cetak">
+
+          </div>
+        </div>
+        
+      </div>
+
+      <script>
+        let undangForm = document.getElementById("undangForm");
+
+undangForm.addEventListener("submit", (e) => {
+e.preventDefault();
+
+let nama = document.getElementById("nama");
+
+if (nama.value == "") {
+  alert("Masukkan nama terlebih dahulu!");
+} else {
+  let hsl = nama.value;
+  
+  for (var i = 0; i < hsl.length; i++) {
+    let ss = hsl.charAt(i);
+    if(ss==" ") hsl=hsl.substring(0,i)+"%20"+hsl.substring(i+1,hsl.length);
+  }
+
+  // perform operation with form input
+  // alert("This form has been successfully submitted!"+hsl);
+  
+  document.getElementById("cetak").innerHTML = "<input id=\"myInput\" style=\"width:500px; height:300px\" type=\"text\" value=\"https://shulthon.github.io/shulthon-rahma/?to="+hsl+"\"\><button onclick=\"myFunction()\">Copy text</button>";
+  // write(
+  //     `This form has a username of ${nama.value}`
+  //   );
+  nama.value = "";
+}
+});
+
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+
+      </script>
+    </body>
+</html>
