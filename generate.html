@@ -152,12 +152,13 @@ let hsl = nama.value;
 for (var i = 0; i < hsl.length; i++) {
 let ss = hsl.charAt(i);
 if(ss==" ") hsl=hsl.substring(0,i)+"%20"+hsl.substring(i+1,hsl.length);
+else if(ss=="&") hsl=hsl.substring(0,i)+"%26"+hsl.substring(i+1,hsl.length);
 }
 
 // perform operation with form input
 // alert("This form has been successfully submitted!"+hsl);
 
-document.getElementById("cetak").innerHTML = "<input class=\"form-control\" id=\"myInput\" type=\"text\" value=\"https://shulthon.github.io/shulthon-rahma/?to="+hsl+"\"\><br/><button onclick=\"myFunction()\">Select All text</button>";
+document.getElementById("cetak").innerHTML = "<input class=\"form-control\" id=\"myInput\" type=\"text\" value=\"https://shulthon.github.io/shulthon-rahma/?to="+hsl+"\"\><br/><button onclick=\"myFunction()\">Select All text</button><br/><br/><a href=\"https://shulthon.github.io/shulthon-rahma/?to="+hsl+"\">Buka Link</a>";
 // write(
 //     `This form has a username of ${nama.value}`
 //   );
