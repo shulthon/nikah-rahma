@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shulthon dan Rahma</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Walimatul 'Urs Shulthon & Rahma" />
+	<meta name="author" content="Djazuli IT" />
+
+
+	<meta property="og:title" content="Pernikahan Shulthon & Rahma"/>
+	<meta property="og:image" content="images/nikah.png"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content="Pernikahan Shulthon & Rahma"/>
+	<meta property="og:description" content="Pernikahan Shulthon & Rahma"/>
+	<meta name="twitter:title" content="Pernikahan Shulthon & Rahma" />
+	<meta name="twitter:image" content="images/nikah.png" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href="https://fonts.cdnfonts.com/css/nature-beauty-personal-use" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/diamond.png">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="js/leaflet/leaflet.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<script>
+	    (function () {
+	  const second = 1000,
+		minute = second * 60,
+		hour = minute * 60,
+		day = hour * 24;
+
+	  //I'm adding this section so I don't have to keep updating this pen every year :-)
+	  //remove this if you don't need it
+	  let today = new Date(),
+	      dd = String(today.getDate()).padStart(2, "0"),
+	      mm = String(today.getMonth() + 1).padStart(2, "0"),
+	      yyyy = today.getFullYear(),
+	      nextYear = yyyy + 1,
+	      dayMonth = "07/01/",
+	      birthday = dayMonth + yyyy;
+
+	  today = mm + "/" + dd + "/" + yyyy;
+	  if (today > birthday) {
+	    birthday = dayMonth + nextYear;
+	  }
+
+	  targetday = "2023-07-01T07:30:00+07:00"
+	  //end
+
+	  const countDown = new Date(targetday).getTime(),
+	      x = setInterval(function() {    
+
+		const now = new Date().getTime(),
+		      distance = countDown - now;
+
+		document.getElementById("days").innerText = Math.floor(distance / (day)),
+		  document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+		  document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+		  document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+		//do something later when date is reached
+		if (distance < 0) {
+		  document.getElementById("headline").innerText = "Walimatul 'Urs!";
+		  document.getElementById("countdown").style.display = "none";
+		  document.getElementById("content").style.display = "block";
+		  clearInterval(x);
+		}
+		//seconds
+	      }, 0)
+	  }());
+
+	</script>
+		
+	</head>
+	<body>
+		
+	<!-- <div class="fh5co-loader"></div>
+	<style type="text/css">
+		nav{
+			position: fixed;
+		}
+	</style> -->
+	
+	        <style>
+            
+
+
+
+/* general styling */
+/* :root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: #843c0c;	
+  height: 100%;
+  margin: 0;
+}
+ */
+/* body {
+   align-items: center;
+  background-color: #ffffff;
+  display: flex; 
+
+} */
+
+
+			
+#countdown {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+			
+#countdown h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+#countdown ul {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#countdown li {
+	background-color: #6b473a;
+	width: 70px;
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: capitalize;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+
+
+@media all and (max-width: 768px) {
+  #countdown h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  #countdown li {
+	text-align: center;
+    font-size: calc(1rem * var(--smaller));
+  }
+  
+  #countdown li span {
+    font-size: calc(2.375rem * var(--smaller));
+  }
+
+
+}
+
+
+        
+#pembuka {
+	height: 100%;
+	width: 100%;
+	
+	background: white;
+	z-index: 1;
+  position: fixed;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  }
+
+  .wrappembuka {
+	position: fixed;
+	top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+	margin: 0 auto;
+	width: auto;
+  }
+  
+
+  #page {
+	display: none;
+  }
+
+  .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+	</style>
+
+	<script>
+
+function showhide() {
+  var x = document.getElementById("pembuka");
+    x.style.display = "none";
+	document.getElementById("page").style.display = "block";
+}
+	</script>
+
+    <div id="pembuka">
+		<div class="wrappembuka">
+			<img src="images/couple.png" style=" padding:20px;width: 300px; display: block; margin: 0 auto;" alt="walimatul" class="img-responsive">
+			<h2 style="color:#6b473a;text-align: center; font-size: 20px; font-family: 'Nature Beauty Personal Use'; line-height: 1.5;">Rahma &amp; Shulthon</h2>
+			<div class="text-center">
+				<span style="text-align: center !important; margin: 0 auto;">Kepada Bapak/ lbu/Saudara/i</span>
+				<script>	
+					const params = new Proxy(new URLSearchParams(window.location.search), {
+					get: (searchParams, prop) => searchParams.get(prop),
+					});
+					// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+					let value = params.to; // "some_value"
+
+					if (value) {
+						document.write("<p style=\"font-size:25px;color:#6b473a\">"+value+"</p>")
+					} else {
+						document.write("<br/><br/>")
+					}
+				</script>
+				<button onclick="showhide()" class="btn">Buka Undangan</button>
+
+			</div>
+		</div>
+	</div>
+	<div id="page">
+
+
+		
+
+	<!-- <nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Pernikahan<strong>.</strong></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active"><a href="#beranda">Beranda</a></li>
+						<li><a href="#acara">Acara</a></li>
+						<li><a href="#map">Denah</a></li>
+						<li><a href="#keutamaan">Keutamaan</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav> -->
+
+	<header id="fh5co-header">
+		<div class="container" id="beranda">
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<img src="images/kiriatas.png" class="animtop"/>
+							<img src="images/kananbawah.png" class="animbottom"/>
+							<h1>Walimatul 'Urs</h1>
+							<img src="images/couple.png" style="width: 70%; display: block; margin-left: auto; margin-right: auto;" alt="walimatul" class="img-responsive">
+							<br/>
+							<h2>Rahma <span style="font-family: 'Sacramento'; font-weight: bold;">&</span> Shulthon</h2>
+							<h3>01 | 07 | 2023</h3>
+							<div id="countdown">
+							    <ul>
+							      <li><span id="days"></span>Hari</li>
+							      <li><span id="hours"></span>Jam</li>
+							      <li><span id="minutes"></span>Menit</li>
+							      <li><span id="seconds"></span>Detik</li>
+							    </ul>
+							</div>
+							<!-- <p><a href="#" class="btn btn-default btn-sm">Mohon Doa Restu</a></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-isi">
+		<div class="container" id="pasangan">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							
+						<div class="containerisi">
+							<img src="images/kiriatas.png" class="animtop"/>
+							<img src="images/kananbawah.png" class="animbottom"/>
+							<span class="salam">السلام عليكم ورحمة الله وبركاته</span>
+							<p>
+								Dengan Memohon Rahmat Dan Ridho Allah Subḥānahu Wa Taʿālā, Yang Telah Menciptakan Makhluk-Nya Secara Berpasang-Pasangan, Kami Bermaksud Menyelenggarakan Pernikahan Kami.
+							</p>
+							<br/>
+								
+							<div class="desc-bride">
+								<h3>Rahma Rosaliana Saraswati, S.Pd, M.Si</h3>
+								<p>Putri pertama dari Bapak Iswanto & Ibu Lina Marlina
+									<br/>
+									(Jl. P. Flores  4  No. 25, RT 001 / RW 010, Perumnas 3, Kel. Aren Jaya, Kec. Bekasi Timur)
+								</p>
+							</div>
+
+							<h3 style="font-family: 'Sacramento'; font-weight: bold; font-size: 35px;">&</h3>
+
+							<div class="desc-groom">
+								<h3>Shulthon Hanif Majid, S.Pd</h3>
+								<p>
+									Putra pertama dari Bapak Agus Purwanto & Ibu Waliyah
+									<br/>
+									(Jl. Swadaya 5 No. 8 RT 016 / 04, Kel. Cempaka Baru, Kec. Kemayoran)
+
+								</p>
+							</div>
+							<!-- <p><a href="#" class="btn btn-default btn-sm">Mohon Doa Restu</a></p> -->
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-isi">
+		<div class="container" id="jadwal">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn" style="width:1000px">
+							
+							<div class="containerisi">
+								<img src="images/kiriatas.png" class="animtop"/>
+								<img src="images/kananbawah.png" class="animbottom"/>
+								<h2>Save the Date</h2>
+								<!-- <p>
+									Insya Allah rangkaian acara akan diselenggarakan pada:
+								</p> -->
+								<div class="containerisi2">
+									<img src="images/diamond.png" style="animation: shake1 10s;
+									animation-iteration-count: infinite; width: 35px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;" alt="walimatul" class="img-responsive">
+									<h3>Akad Nikah</h3>
+									<table style="margin: 0 auto;font-weight: bold;">
+										<tr>
+											<td style="width: 30%;text-align: center; font-size: 14px;">Sabtu</td>
+											<td style="width: 100px;text-align: center; border-left: 1px solid #6b473a;  border-right: 1px solid #6b473a; font-size: 14px;line-height: 1.2;"><span style="font-size: 30px;font-weight: bold;">1</span><br/>2023</td>
+											<td style="width: 30%;text-align: center; font-size: 14px;">Juli</td>
+										</tr>
+										<tr>
+											<td style="text-align: center; font-size: 14px;height: 50px;" colspan="3">Pukul 07.30 - Selesai</td>
+										</tr>
+									</table>
+									<p style="font-weight: bold;">
+										Alamat:<br/>Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi.<br/>Jl. Chairil Anwar, No.1, Margahayu, Bekasi Timur, Jawa Barat</p>
+								</div>
+								<br/>
+								<div class="containerisi2">
+									<img src="images/walimah.png" style="animation: shake1 10s;
+									animation-iteration-count: infinite; width: 35px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;" alt="walimatul" class="img-responsive">
+									<h3>Walimah</h3>
+									<table style="margin: 0 auto;font-weight: bold;">
+										<tr>
+											<td style="width: 30%;text-align: center; font-size: 14px;">Sabtu</td>
+											<td style="width: 100px;text-align: center; border-left: 1px solid #6b473a;  border-right: 1px solid #6b473a; font-size: 14px;line-height: 1.2;"><span style="font-size: 30px;font-weight: bold;">1</span><br/>2023</td>
+											<td style="width: 30%;text-align: center; font-size: 14px;">Juli</td>
+										</tr>
+										<tr>
+											<td style="text-align: center; font-size: 14px;height: 50px;" colspan="3">Pukul 11.00 - 17.00</td>
+										</tr>
+									</table>
+									<p style="font-weight: bold;">Alamat:<br/>Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi.<br/>Jl. Chairil Anwar, No.1, Margahayu, Bekasi Timur, Jawa Barat</p>
+
+
+								</div>
+								<p class="text-center" style="margin:20px auto;"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230701T030000Z%2F20230701T100000Z&location=Gedung%20Serbaguna%20Komplek%20PP.%20PUPR%20Pengairan%20Bekasi&text=Pernikahan%20Rahma%20%26%20Shulthon" class="btn btn-default btn-sm">Tambahkan ke Kalender</a></p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-isi">
+		<div class="container" id="lokasi">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn" style="width:1000px">
+							
+							<div class="containerisi">
+								<img src="images/kiriatas.png" class="animtop"/>
+								<img src="images/kananbawah.png" class="animbottom"/>
+								<h2>Lokasi Acara</h2>
+								<!-- <p>
+									Doa restu Anda merupakan karunia yang sangat berarti bagi kami
+								</p> -->
+									<iframe frameborder="0" style="width: 100%; height:500px;" scrolling="no" marginheight="0" marginwidth="0"
+									src="https://maps.google.com/maps?q=Gedung%20Serbaguna%20Komplek%20PP.%20PUPR%20Pengairan%20Bekasi&#038;t=m&#038;z=16&#038;output=embed&#038;iwloc=near"
+									title="Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi"
+									aria-label="Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi">
+									</iframe>
+					
+									<p class="text-center" style="margin:20px auto;"><a href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=Gedung%20Serbaguna%20Komplek%20PP.%20PUPR%20Pengairan%20Bekasi" class="btn btn-default btn-sm">Buka Maps</a></p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-isi">
+		<div class="container" id="penutup">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn" style="width:1000px">
+							
+							<div class="containerisi">
+								<img src="images/kiriatas.png" class="animtop"/>
+								<img src="images/kananbawah.png" class="animbottom"/>
+								<p>
+									Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/ lbu/Saudara/i dapat hadir untuk memberikan doa restu kepada kami.
+									<br/>
+									Kami yang berbahagia,
+								</p>
+
+								<img src="images/couple.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;" alt="walimatul" class="img-responsive">
+
+								<span style="font-size:20px; font-family:'Nature Beauty Personal Use';">Rahma & Shulthon</span>
+								
+								<p class="text-center" style="margin:20px auto;"><a href="https://shulthon.blogspot.com" class="btn btn-default btn-sm">&copy 2023 Shulthon</a></p>
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <audio src="bird.aac" autoplay="autoplay" type="audio/mpeg"></audio> -->
+	<!-- <audio controls autoplay loop>
+		<source src="bird.aac" type="audio/mp4" />
+	</audio> -->
+	
+	
+
+	<!-- <div id="fh5co-couple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Assalamu'alaykum!</h2>
+					<h3>Sabtu, 1 Juli 2023 Bekasi Timur, Kota Bekasi</h3>
+					<p>Akad Nikah Kami</p>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/1.png" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Shulthon Hanif Majid, S.Pd</h3>
+						<p>Putra pertama dari Bapak Agus Purwanto & Ibu Waliyah</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/2.png" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Rahma Rosaliana Saraswati, S.Pd</h3>
+						<p>Putri pertama dari Bapak Iswanto & Ibu Lina Marlina</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <div id="fh5co-event">
+		<div class="overlay"></div>
+		<div class="container" id="acara">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Acara Spesial Kami</span>
+					<h2>Acara Pernikahan</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>AKAD NIKAH</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>07:30 Pagi</span>
+										<span>10:00 Pagi</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Sabtu, 1</span>
+										<span>Juli 2023</span>
+									</div>
+									<p>Bertempat di Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>RESEPSI</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>09:00 s/d 12:00</span>
+										<span>13:00 s/d 17:00</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Sabtu, 1</span>
+										<span>Juli 2023</span>
+									</div>
+									<p>Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi. Jl. Chairil Anwar, No.1, Margahayu, Bekasi Timur, Jawa Barat</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <div id="fh5co-couple-story">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Lokasi Acara</h2>
+				</div>
+			</div>
+			<div class="row">
+				<iframe frameborder="0" style="width: 100%; height:500px;" scrolling="no" marginheight="0" marginwidth="0"
+				src="https://maps.google.com/maps?q=Gedung%20Serbaguna%20Komplek%20PP.%20PUPR%20Pengairan%20Bekasi&#038;t=m&#038;z=16&#038;output=embed&#038;iwloc=near"
+				title="Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi"
+				aria-label="Gedung Serbaguna Komplek PP. PUPR Pengairan Bekasi"
+		>
+	</iframe>
+
+							<p class="text-center" style="margin:0 auto;"><a href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=Gedung%20Serbaguna%20Komplek%20PP.%20PUPR%20Pengairan%20Bekasi" class="btn btn-default btn-sm">Buka Maps</a></p>
+			</div>
+		</div>
+	</div> -->
+
+
+	<!-- <div id="fh5co-testimonial">
+		<div class="container" id="keutamaan">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>Dalil Pernikahan</span>
+						<h2>Keutamaan Menikah</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="wrap-testimony">
+							<div class="owl-carousel-fullwidth">
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<span>Allah Berfirman:</span>
+										<blockquote>
+											<p>“Dan segala sesuatu Kami Ciptakan Berpasang-pasangan supaya kamu mengingat kebesaran Allah.”(QS Az-Zariyat: 49)</p>
+										</blockquote>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<span>Allah Berfirman:</span>
+										<blockquote>
+											<p>“Bagaimana kamu akan mengambilnya kembali, padahal sebagian kamu telah bergaul (bercampur) dengan yang lain sebagai suami-isteri. Dan mereka (isteri-isterimu) telah mengambil dari kamu perjanjian yang kuat.” (QS An-Nisa: 21)</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<span>Rasulullah bersabda:</span>
+										<blockquote>
+											<p>“Siapa yang ingin bertemu Allah dalam keadaan suci dan disucikan, maka menikahlah dengan perempuan-perempuan merdeka.” (HR Ibnu Majah)</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<span>Rasulullah bersabda:</span>
+										<blockquote>
+											<p> “Siapa yang menikah maka sungguh ia telah diberi setengahnya ibadah.” (HR Abu Ya’la)</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- <footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+
+		</div>
+	</footer> -->
+	</div>
+<!-- 	<audio autoplay="true" loop="true" controls>
+		<source src="audio.mp3" type="audio/mpeg">
+	</audio> -->
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<!-- <script src="js/simplyCountdown.js"></script> -->
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script src="js/leaflet/leaflet.js"></script>
+	<!-- <script>
+	    if (document.getElementById("maps-view-absen")) {
+	        var map = L.map('maps-view-absen').setView([-6.25330, 106.99925], 15);
+
+	        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	        }).addTo(map);
+
+	        L.marker([-6.25330, 106.99925]).addTo(map);
+	    }
+	</script>
+	<script>
+		// var d = new Date(new Date().getTime() + 200 * 120 * 120 * 700);
+		var d = new Date("May 6, 2023 07:30:000");
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+	</script> -->
+
+	</body>
+</html>
+
